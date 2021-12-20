@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calcul Fibonnaci</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+        body,
+        html {
+            min-height: 100%;
+            width: 600px;
+            margin: 0 auto
+        }
+
+        body,
+        div,
+        form,
+        input,
+        p {
+            padding: 0;
+            margin: 0;
+            outline: 0;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 14px;
+            color: #666;
+            line-height: 22px
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: inherit;
+            padding: 20px
+        }
+
+        form {
+            width: 100%;
+            padding: 20px;
+            border-radius: 6px;
+            background: #fff;
+            box-shadow: 0 0 20px 0 #095484
+        }
+
+        input {
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px
+            
+        }
+
+        input {
+            width: calc(100% - 10px);
+            padding: 5px
+        }
+
+        .item:hover p,
+        input:hover::placeholder {
+            color: #095484
+        }
+
+        .item input:hover {
+            border: 1px solid transparent;
+            box-shadow: 0 0 6px 0 #095484;
+            color: #095484
+        }
+
+        .item {
+            position: relative;
+            margin: 10px 0
+        }
+
+        span.required {
+            margin-left: 0;
+            color: red
+        }
+
+        .btn-block {
+            margin-top: 10px;
+            text-align: center
+        }
+
+        button {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #095484;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer
+        }
+
+        button:hover {
+            background: #0666a3
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <form action="/">
+            <h3>Calculer la somme des termes de la suite de Fibonnacci au Nième terme</h3>
+            <div class="item">
+                <p>Valeur de N<span class="required">*</span></p>
+                <input type="text" name="value" required />
+            </div>
+            <div class="item">
+                <p>Résultat</p>
+                <input type="text" name="result" disabled />
+            </div>
+            <div class="btn-block">
+                <button type="submit" href="/">Calculer</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
